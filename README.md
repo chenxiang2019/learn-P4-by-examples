@@ -4,6 +4,7 @@ P4 examples with Chinese documents.
 
 ## P4 Examples: P4实例
 
+- [ipv4_forward](/ipv4_forward): 开始P4编程之旅；
 - [counter](counter/): 本例通过P4对交换机内部的状态化组件计数器进行定义，并在运行时下发控制规则获取计数器信息；
 - [sigcomm15](sigcomm15/): Barefoot在SIGCOMM 2015的P4 Workshop中使用的Demo，包括一个简单的源路由协议及TCP Flowlet。
 
