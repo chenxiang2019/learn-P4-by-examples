@@ -106,8 +106,6 @@ you need to implement the parser and the ingress control flow.
 
 The EasyRoute packets looks like this:
 
-EasyRoute的数据报结构如下：
-
 ```
 preamble (8 bytes) | num_valid (4 bytes) | port_1 (1 byte) | port_2 (1 byte) |
 ... | port_n (1 byte) | payload
@@ -116,9 +114,6 @@ preamble (8 bytes) | num_valid (4 bytes) | port_1 (1 byte) | port_2 (1 byte) |
 The preamble is always set to 0. You can use this to distinguish the EasyRoute
 packets from other packets (Ethernet frames) your switch may receive. We do not
 guarantee that your P4 switch will exclusively receive EasyRoute packets.
-
-`preamble`字段总是设置为0。您可以使用该字段来区别您的交换机所接收到的EasyRoute数据报
-和其他数据报(比如以太网帧)。我们无法保证您的P4交换机仅收到EasyRoute数据报。
 
 The num_valid field indicates the number of valid ports in the header. If your
 EasyRoute packet is to traverse 3 switches, num_valid will initially be set to
