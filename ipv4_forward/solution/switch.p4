@@ -6,10 +6,10 @@
 #define ETHERTYPE_IPV6         0x86dd
 #define ETHERTYPE_ARP          0x0806
 
-#define IP_PROTOCOLS_ICMP              1
-#define IP_PROTOCOLS_IPV4              4
-#define IP_PROTOCOLS_TCP               6
-#define IP_PROTOCOLS_UDP               17
+#define IP_PROTOCOLS_IPHL_ICMP              1
+#define IP_PROTOCOLS_IPHL_IPV4              4
+#define IP_PROTOCOLS_IPHL_TCP               6
+#define IP_PROTOCOLS_IPHL_UDP               17
 
 /* header */
 

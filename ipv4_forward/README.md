@@ -80,6 +80,8 @@ $ ./set_switch.sh
 在Mininet的终端中执行：
 
 ```
+mininet> h1 arp -s 10.0.0.2 00:00:00:00:00:02
+mininet> h2 arp -s 10.0.0.1 00:00:00:00:00:01
 mininet> h1 ping h2
 ```
 
